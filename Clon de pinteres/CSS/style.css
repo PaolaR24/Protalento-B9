@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap:15px;
+    height: 15vh;
+    padding-left: 15px;
+}
+
+header p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+
+    border-radius: 9px;
+    transition: 0.5s;
+    height: 60%;
+    width: 35px;
+}
+
+header p:hover{
+    color:rgb(179, 230, 120);
+    cursor: pointer;
+    background-color: black;
+}
+
+header p:active{
+    background-color: darkgray;
+}
+
+header i{
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 4px;
+    transition: 0.3s;
+}
+
+header i:hover{
+    cursor: pointer;
+    background-color: rgba(145, 143, 143, 0.4);
+}
+
+.buscador{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-size: 15px 15px;
+    background-position: 820px 15px;
+    background-repeat: no-repeat;
+    background-color: rgba(230, 220, 220, 0.4);
+    position: relative;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+    width: 65%;
+    height: 50%;
+}
+
+.lupa{
+    position: absolute;
+    top: calc(50%);
+    left:calc(0% + 25px);
+}
+
+.logo{
+    height: 60%;
+    transition: 0.3s;
+}
+
+.perfil{
+    border-radius: 20px;
+    height: 50%;
+    transition: 0.3s;
+}
+
+.perfil:hover{
+    cursor: pointer !important;
+}
+
+.logo:hover{
+    cursor: pointer;
+    height: 85%;
+}
+
+main {
+   columns: 5 100px;
+   column-gap: 1.5%;
+   display: block; 
+    
+}
+
+
+main > div{
+    margin-bottom: 5%;
+    position: relative;
+}
+
+main > div > img{
+    z-index: 1;
+    max-width: 100%;
+}
+
+.contenido{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+main>div:hover>img {
+    opacity: 0.5;
+}
+main>div:hover .contenido{
+    display: flex;
+    flex-flow: column;
+}
+
+.primero{
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+}
+.primero button{
+    height: 30%;
+}
+.segundo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50%;
+}
+
+
+footer {
+    background-color: rgb(236, 181, 108);
+    height: 10vh;
+}
